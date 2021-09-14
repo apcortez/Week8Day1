@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <script src="ScriptHotel.js"></script>
+    <link href="Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="showAlert()">
+    <h1 style="text-align: left;"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8eb438bb-a5b7-475c-8bb5-9fcd3d005f96/d5bardw-87b99774-dac3-45d0-9994-9cf8de7308b7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhlYjQzOGJiLWE1YjctNDc1Yy04YmI1LTlmY2QzZDAwNWY5NlwvZDViYXJkdy04N2I5OTc3NC1kYWMzLTQ1ZDAtOTk5NC05Y2Y4ZGU3MzA4YjcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.38WdNC_ccb5CgEJFQxqFsHBDawk41S_G7LYNgKRRFF4" alt="" width="58" height="43" /><strong>WEBHOTEL</strong></h1>
+    <hr />
+    <ul>
+        <li><a class="active" href="HomePageHotel.html">Home</a></li>
+        <li><a href="CameraHotel.html">Le nostre camere</a></li>
+        <li><a href="ContattiHotel.html">Contatti</a></li>
+    </ul>
+    <p><img src="https://www.shangrilaroma.it/data/jpg/shangri-la22.jpg" alt="" width=100% height="563" /></p>
+    <br />
+    <div style="overflow:hidden;background-color: antiquewhite;width:100%">
+        <img src="https://www.shangrilaroma.it/data/jpg/shangri-la1.jpg" alt="" width="256" height="144" style="float:right">
+        <p>
+            Tutte le camere sono provviste dei servizi standard di un Hotel 4 stelle, ma l&rsquo;attenzione all&rsquo;innovazione e agli spazi esterni rendono il WebHotel una promessa di totale appagamento. I televisori di ultima generazione con canali internazionali permettono di trascorrere una rilassante e piacevole serata comodamente dalla propria stanza. Aggiungono valore terrazzi e giardini, accuratamente attrezzati, che una parte delle camere ha in privata dotazione, garantendo un piacevole sfogo esterno per chi ama farsi travolgere dall&rsquo;aria e l&rsquo;atmosfera di Roma.
+        </p>
+    </div>
+    <br />
+    
+    
+    
+    <button class="open-button" onclick="openForm()">Login</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <h1>Login</h1>
+
+            <label for="text"><b>Username</b></label>
+            <input type="text" placeholder="Inserisci Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Inserisci Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+        </form>
+    </div>
+    <footer>
+        <p>WEBHOTEL©</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+    </footer>
+</body>
+
+</html>
+-

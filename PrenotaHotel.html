@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Prenota</title>
+    <link href="Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 style="text-align: left;"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8eb438bb-a5b7-475c-8bb5-9fcd3d005f96/d5bardw-87b99774-dac3-45d0-9994-9cf8de7308b7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhlYjQzOGJiLWE1YjctNDc1Yy04YmI1LTlmY2QzZDAwNWY5NlwvZDViYXJkdy04N2I5OTc3NC1kYWMzLTQ1ZDAtOTk5NC05Y2Y4ZGU3MzA4YjcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.38WdNC_ccb5CgEJFQxqFsHBDawk41S_G7LYNgKRRFF4" alt="" width="58" height="43" /><strong>WEBHOTEL</strong></h1>
+    <hr />
+    <ul>
+        <li><a href="HomePageHotel.html">Home</a></li>
+        <li><a href="CameraHotel.html">Le nostre camere</a></li>
+        <li><a href="ContattiHotel.html">Contatti</a></li>
+    </ul>
+    <br /><table style="height: 616px;" width="1412" align="center" name="prenotazione">
+        <tbody>
+            <tr>
+                <td style="width: 700px;">
+                    <div class="container">
+                        <form>
+                            <fieldset>
+                                <legend>Prenotazione:</legend>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="nome">Nome:</label>
+                                    </div>
+                                    <div class="col-50">
+                                        <input type="text" required id="nome" name="nome">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="cognome">Cognome:</label>
+                                    </div>
+                                    <div class="col-50">
+                                        <input type="text" required id="cognome" name="cognome">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="email">Email:</label>
+                                    </div>
+                                    <div class="col-50">
+                                        <input type="email" required id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="tel">Telefono:</label>
+                                    </div>
+                                    <div class="col-50">
+                                        <input type="tel" required pattern="[0-9]{10}" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="checkin">Data di Check-in</label>
+                                    </div>
+                                    <div class="col-50">
+                                        <input type="date" required id="checkin" name="checkin" min="2021-09-14">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="checkout">Data di Check-out</label>
+                                    </div>
+                                    <div class="col-50">
+                                        <input type="date" required id="checkout" name="checkout" min="2021-09-15">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="paese">Paese</label>
+                                    </div>
+                                    <div class="col-50">
+                                        <select id="paese" name="paese">
+                                            <option value="italia">Italia</option>
+                                            <option value="francia">Francia</option>
+                                            <option value="germania">Germania</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </td>
+                <td><img src="https://www.shangrilaroma.it/data/mobile/shangri-la26.jpg" alt="" width="824" height="544" class="img" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="open-button" onclick="openForm()">Login</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <h1>Login</h1>
+
+            <label for="text"><b>Username</b></label>
+            <input type="text" placeholder="Inserisci Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Inserisci Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+        </form>
+    </div>
+    <footer>
+        <p>WEBHOTEL©</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+    </footer>
+</body>
+</html>

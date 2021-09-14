@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contatti</title>
+    <link href="Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 style="text-align: left;"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8eb438bb-a5b7-475c-8bb5-9fcd3d005f96/d5bardw-87b99774-dac3-45d0-9994-9cf8de7308b7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhlYjQzOGJiLWE1YjctNDc1Yy04YmI1LTlmY2QzZDAwNWY5NlwvZDViYXJkdy04N2I5OTc3NC1kYWMzLTQ1ZDAtOTk5NC05Y2Y4ZGU3MzA4YjcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.38WdNC_ccb5CgEJFQxqFsHBDawk41S_G7LYNgKRRFF4" alt="" width="58" height="43" /><strong>WEBHOTEL</strong></h1>
+    <hr />
+    <ul>
+        <li><a href="HomePageHotel.html">Home</a></li>
+        <li><a href="CameraHotel.html">Le nostre camere</a></li>
+        <li><a class="active" href="ContattiHotel.html">Contatti</a></li>
+    </ul>
+    <table style="height: 563px; width: 1505px;">
+        <tbody>
+            <tr>
+                <td style="width: 260.2px;">
+                    <p style="text-align: center;"><em><strong>Web Hotel</strong></em></p>
+                    <p style="text-align: center;"><em><strong>Via WaltDisney 141</strong></em></p>
+                    <p style="text-align: center;"><em><strong>20124 Roma RM</strong></em></p>
+                    <p style="text-align: center;"><em><strong>E-mail: info@webhotel.com</strong></em></p>
+                </td>
+                <td style="width: 800px;" align="center"><img src="https://www.shangrilaroma.it/data/mobile/shangri-la26.jpg" alt="" width="924" height="520" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="open-button" onclick="openForm()">Login</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <h1>Login</h1>
+
+            <label for="text"><b>Username</b></label>
+            <input type="text" placeholder="Inserisci Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Inserisci Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+        </form>
+    </div>
+    <footer>
+        <p>WEBHOTEL©</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+    </footer>
+</body>
+</html>
