@@ -25,25 +25,26 @@
         </p>
     </div>
     <br />
-    
-    
-    
-    <button class="open-button" onclick="openForm()">Login</button>
+
+
+
+    <button id="loginformbtn" class="open-button" onclick="openForm()">Login</button>
 
     <div class="form-popup" id="myForm">
-        <form action="#" class="form-container">
+        <form id="loginForm" class="form-container" onsubmit="save(); closeForm(); hideLogin();">
             <h1>Login</h1>
 
             <label for="text"><b>Username</b></label>
-            <input type="text" placeholder="Inserisci Username" name="username" required>
+            <input type="text" placeholder="Inserisci Username" id="username" required>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Inserisci Password" name="psw" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Inserisci Password" id="password" required>
 
             <button type="submit" class="btn">Login</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
         </form>
     </div>
+    <button id="logoutbtn" class="open-button" onclick="logoutForm()" style="display:none">Logout</button>
     <footer>
         <p>WEBHOTEL©</p>
         <a href="#" class="fa fa-facebook"></a>
@@ -53,4 +54,3 @@
 </body>
 
 </html>
--
